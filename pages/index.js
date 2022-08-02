@@ -1,16 +1,10 @@
-import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
 import foto from '../public/foto.png'
+import Main from '../components/layout/main'
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Portofolio || Muhamad Arwani Maulana</title>
-        <meta name="description" content="Muhamad Arwani Maulana's Portofolio" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Main>
       <section id='home' className='pt-20 md:pt-36 min-h-screen'>
         <div className='container'>
           <div className='md:flex'>
@@ -48,6 +42,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </Main>
   )
 }
